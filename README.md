@@ -20,6 +20,14 @@ To run Jest
 npm test
 ```
 
+To run the entire process (in Docker):
+
+```sh
+docker build -t jest-tests .
+docker run --rm jest-tests
+echo $?
+```
+
 ## Summary
 
 In computer science, there are different ways to search through collections of data. Understanding the various algorithms and patterns for searching and sorting data sets is an essential part of computer science.

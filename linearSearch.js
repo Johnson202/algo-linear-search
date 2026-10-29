@@ -1,9 +1,19 @@
 function linearSearch(searchTerm, arr) {
-  return undefined;
-}
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === searchTerm) {
+      return i;
+    };
+  };
+};
 
 function globalLinearSearch(searchTerm, arr) {
-  return [];
-}
+  let indices = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === searchTerm) {
+      indices.push(i);
+    };
+  };
+  return indices;
+};
 
 module.exports = { linearSearch, globalLinearSearch };
